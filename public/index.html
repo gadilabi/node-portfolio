@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gad Laviod's Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="components/project.js"></script>
+	<style>
+		.project {}
+
+		#project-1 {}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="about-me">
+
+		<div id="about-me-text">
+
+			<div id="about-me-header-container">
+				<img id="about-me-header" src="images/about_me.png" alt="">
+
+			</div>
+			<p>
+				My name is Gad Laviod and I am a 32 years old self taught full stack web developer.
+				<br><br>
+				Programming has been a hobby of mine for about a decade, but it was 2 years ago when I first started learning web development.
+				I set out to create a website for my tutoring business and ended up developing not only a website but a passion for the field.
+
+
+			</p>
+
+			<a id="checkout-skills" href="#technologies">Checkout My Skills</a>
+
+
+		</div>
+
+		<div id="image-container">
+
+			<img src="images/id.png" alt="">
+
+		</div>
+
+	</div>
+
+	<div id="technologies">
+
+		<h2>Technologies</h2>
+
+		<div id="tech-wrapper">
+			<div id="frontend">
+
+				<h3>
+
+					Frontend
+				</h3>
+
+				<p>
+
+					I can create intricate UI using vanilla js with or without web components.
+					I am relatively new to js frameworks but have a good grasp of reack.
+
+				</p>
+			</div>
+
+			<div id="backend">
+
+				<h3>
+
+					Backend
+				</h3>
+
+				<p>
+					I have used both PHP and Node.js (with express) as server side languages.
+					In terms of databases I have mainly worked with MySQL but have some experience with MongoDB.
+
+
+				</p>
+
+			</div>
+		</div>
+
+		<div id="technologies-button-wrapper">
+			<a href="#projects" id="checkout-projects">
+
+				<span>
+					Checkout Projects
+
+				</span>
+
+			</a>
+
+
+		</div>
+
+	</div>
+
+
+	<div id="projects">
+
+
+		<div id="projects-header">
+			<img src="images/project_banner.png" alt="">
+
+		</div>
+
+		<div id="projects-wrapper">
+
+
+
+			<app-project color="#fe076e" project-number="Project 1" live-site="https://neteacher.co.il" git-url="" img-url="images/neteacher.png" project-name="Online Learning Platform" frontend="Vannila js" backend="PHP" description="This is a website built for my math tutoring business.
+			The website allows users to purchase online math courses."></app-project>
+
+			<app-project color="#ff4d06" project-number="Project 2" live-site="https://avodatova.co.il" git-url="" img-url="images/avodatova.png" project-name="Job Search Platform" frontend="Vannila js" backend="PHP" description=" This is a job search platform. It allows users to register as job seekers or as recruiters. Job seekers can upload their cv, search for jobs and apply with one click. Recruiters can publish ads, track the number of applicants and download their cvs."></app-project>
+
+			<app-project color="#008080" project-number="Project 3" live-site="https://moominmemorygame.herokuapp.com" git-url="https://github.com/gadilabi/moomin" img-url="images/moomin.png" project-name="Moomin Memory Game" frontend="Vannila js" backend="Node.js" description=" 	This is a moomin themed memory game.							The game has three modes: single player, two players on the same machine and two players on remote machines."></app-project>
+
+			<app-project color="#082a49" project-number="Project 4" live-site="https://letsstarttalking.herokuapp.com/" git-url="https://github.com/gadilabi/lets-talk" img-url="images/letstalk.png" project-name="Video Chat" frontend="Web Components" backend="Node.js" description="This little website allows users to create rooms where they can chat with their friends.
+			Users can either send messages to the entire room or private messages to specific users. Moreover, Video calls are allowed between any two users."></app-project>
+
+		</div>
+
+	</div>
+
+
+	<!--
+	<div id="projects">
+
+		<div class="project" id="project-1">
+			<div class="project-wrapper">
+
+				<h2>
+
+					Project-1: Online Learning Platform
+				</h2>
+				</h2>
+				</h2>
+				</h2>
+
+				<div class="about-project">
+
+					<div class="links">
+						<h3>Links</h3>
+
+						<div>
+							Live site: <a href="https://neteacher.co.il/">
+
+								https://neteacher.co.il
+							</a>
+
+						</div>
+
+
+					</div>
+
+					<div class="description">
+						<h3>
+							Description
+
+						</h3>
+
+						<p>
+							This is a website built for my math tutoring business.
+							The website allows users to purchase online math courses.
+
+						</p>
+
+					</div>
+
+					<div class="technology">
+
+						<h3>
+							Technologies in use
+
+						</h3>
+						<p>
+
+							This website was created using the LAMP stack.
+
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="project" id="project-2">
+			<div class="project-wrapper">
+
+				<h2>
+
+					Project-2: Job Search Platform
+				</h2>
+
+				<div class="about-project">
+
+					<div class="links">
+						<h3>Links</h3>
+
+						<div>
+							Live site: <a href="https://avodatova.co.il/">
+								https://avodatova.co.il
+
+							</a>
+
+						</div>
+
+
+					</div>
+
+					<div class="description">
+						<h3>
+							Description
+
+						</h3>
+
+						<p>
+
+							This is a job search platform.
+							It allows users to register as job seekers or as recruiters.
+							Job seekers can upload their cv, search for jobs and apply with one click.
+							Recruiters can publish ads, track the number of applicants and download their cvs.
+
+						</p>
+
+					</div>
+
+					<div class="technology">
+
+						<h3>
+							Technologies in use
+
+						</h3>
+						<p>
+
+							This website was created using the LAMP stack.
+
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="project" id="project-3">
+			<div class="project-wrapper">
+
+				<h2>
+
+					Project-3: Memmory Game
+				</h2>
+
+				<div class="about-project">
+
+					<div class="links">
+						<h3>Links</h3>
+
+						<div>
+							Live site: <a href="https://moominmemorygame.herokuapp.com/">
+
+								Moomin Memory Game
+
+							</a>
+
+						</div>
+
+
+					</div>
+
+					<div class="description">
+						<h3>
+							Description
+
+						</h3>
+
+						<p>
+
+							This is a moomin themed memory game.
+							The game has three modes: single player, two players on the same machine and two players on remote machines.
+
+						</p>
+
+					</div>
+
+					<div class="technology">
+
+						<h3>
+							Technologies in use
+
+						</h3>
+						<p>
+
+							This project was created using vanilla js on the frontend and Node.js (with express) on the backend.
+							The online multiplayer is ahcieved using websockets.
+
+
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="project" id="project-4">
+			<div class="project-wrapper">
+
+				<h2>
+
+					Project-4: Video and Text Chat App
+				</h2>
+
+				<div class="about-project">
+
+					<div class="links">
+						<h3>Links</h3>
+
+						<div>
+							Live site: <a href="https://letsstarttalking.herokuapp.com/">
+								https://letsstarttalking.herokuapp.com/
+
+							</a>
+
+						</div>
+
+
+					</div>
+
+					<div class="description">
+						<h3>
+							Description
+
+						</h3>
+
+						<p>
+
+							This little website allows users to create rooms where they can chat with their friends.
+							Users can either send messages to the entire room or private messages to specific users. Moreover, Video calls are allowed between any two users.
+
+
+						</p>
+
+					</div>
+
+					<div class="technology">
+
+						<h3>
+							Technologies in use
+
+						</h3>
+						<p>
+							The backend uses Node.js (with express).
+							The frontend is built with web components.
+							The text chat is achieved with websockets (with the help of the socket.io library). The video chat is achieved through the use of WebRTC.
+							I used the native API , without the use of any libraries like Peer.js.
+
+
+
+						</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+-->
+
+</body>
+
+</html>

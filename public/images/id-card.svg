@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="id-card.svg"
+   id="svg871"
+   version="1.1"
+   viewBox="0 0 6.46216 4.31765"
+   xml:space="preserve"
+   style="fill-rule:evenodd;text-rendering:geometricPrecision;image-rendering:optimizeQuality;clip-rule:evenodd;shape-rendering:geometricPrecision"><sodipodi:namedview
+   inkscape:current-layer="svg871"
+   inkscape:window-maximized="1"
+   inkscape:window-y="-9"
+   inkscape:window-x="-9"
+   inkscape:cy="2.158825"
+   inkscape:cx="3.23108"
+   inkscape:zoom="193.85545"
+   showgrid="false"
+   id="namedview873"
+   inkscape:window-height="1001"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+ <defs
+   id="defs856">
+  <style
+   id="style854"
+   type="text/css">
+    .str1 {stroke:#1F1A17;stroke-width:0.0286362}
+    .str0 {stroke:white;stroke-width:0.0286362}
+    .fil2 {fill:#1F1A17}
+    .fil0 {fill:#EAE342}
+    .fil1 {fill:white}
+  </style>
+ </defs>
+ <g
+   style="fill:#e8006c;fill-opacity:1"
+   id="Ebene_x0020_1">
+  <g
+   style="fill:#e8006c;fill-opacity:1"
+   id="_161378960">
+   <rect
+   style="fill:#e8006c;fill-opacity:1"
+   x=".014318"
+   y=".014318"
+   width="6.4335"
+   height="4.289"
+   ry=".55944"
+   rx=".55944"
+   class="fil0 str0"
+   id="_161099504" />
+   <rect
+   style="fill:#e8006c;fill-opacity:1"
+   x=".36631"
+   y=".38195"
+   width="2.4219"
+   height="2.8324"
+   ry=".18648"
+   rx=".18648"
+   class="fil1 str0"
+   id="_161099432" />
+   <g
+   style="fill:#e8006c;fill-opacity:1"
+   id="g862">
+    <circle
+   style="fill:#e8006c;fill-opacity:1"
+   class="fil2 str1"
+   r=".67599"
+   cx="1.5994"
+   cy="1.2031"
+   id="_161099384" />
+    <path
+   style="fill:#e8006c;fill-opacity:1"
+   class="fil2 str1"
+   d="m0.50382 3.2311h2.1678v-0.54778c0-0.30128-0.2465-0.54778-0.54778-0.54778h-1.0722c-0.30128 0-0.54778 0.2465-0.54778 0.54778v0.54778z"
+   id="_161099336" />
+   </g>
+   <rect
+   style="fill:#e8006c;fill-opacity:1"
+   x="3.3055"
+   y=".88526"
+   width="2.6806"
+   height=".27972"
+   ry=".13986"
+   rx=".13986"
+   class="fil1 str0"
+   id="_161099240" />
+   <rect
+   style="fill:#e8006c;fill-opacity:1"
+   x="3.3055"
+   y="2.3171"
+   width="2.6806"
+   height=".27972"
+   ry=".13986"
+   rx=".13986"
+   class="fil1 str0"
+   id="_161099168" />
+   <rect
+   style="fill:#e8006c;fill-opacity:1"
+   x="3.3055"
+   y="1.6011"
+   width="2.6806"
+   height=".27972"
+   ry=".13986"
+   rx=".13986"
+   class="fil1 str0"
+   id="_161099096" />
+  </g>
+ </g>
+<metadata
+   id="metadata869"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><cc:license
+         rdf:resource="http://creativecommons.org/licenses/publicdomain/" /><dc:publisher><cc:Agent
+           rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher><dc:title>ID Card</dc:title><dc:date>2012-02-20T07:45:22</dc:date><dc:description /><dc:source>https://openclipart.org/detail/168412/id-card-by-zorro</dc:source><dc:creator><cc:Agent><dc:title>zorro</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>Passprt Ausweis</rdf:li></rdf:Bag></dc:subject></cc:Work><cc:License
+       rdf:about="http://creativecommons.org/licenses/publicdomain/"><cc:permits
+         rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+         rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
+         rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License></rdf:RDF></metadata></svg>
