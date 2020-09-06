@@ -188,7 +188,7 @@ class Project extends HTMLElement {
 			font-family: arial;
 			width: var(--card-width);
 			max-width: 90vw;
-			min-height:616px;
+			min-height:640px;
 			border-radius: 6px;
 			overflow: hidden;
 			background-color:white;
@@ -239,6 +239,7 @@ class Project extends HTMLElement {
 			background-color: var(--color);
 			display: flex;
 			justify-content: space-around;
+			margin-top: 40px;
 		}
 
 		a {

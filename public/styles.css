@@ -81,6 +81,7 @@ body {
 	margin-right: 40px;
 	flex-basis: 50ch;
 	font-size: 25px;
+	margin-left: 20px;
 
 }
 
@@ -108,6 +109,7 @@ body {
 	text-align: center;
 	flex-basis: 50ch;
 	font-size: 25px;
+	margin-right: 20px;
 }
 
 #backend > h3 {
@@ -137,7 +139,7 @@ body {
 
 #checkout-projects {
 	all: unset;
-	color:white;
+	color: white;
 	border-radius: 50%;
 	background-color: crimson;
 	width: 100px;
@@ -162,10 +164,6 @@ body {
 
 }
 
-h3 {
-	text-decoration: underline;
-
-}
 
 #projects-wrapper {
 	display: grid;
@@ -222,10 +220,10 @@ app-project {
 	}
 
 	#frontend {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	#backend {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
