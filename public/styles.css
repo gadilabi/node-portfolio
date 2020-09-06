@@ -64,9 +64,9 @@ body {
 
 #tech-wrapper {
 	display: flex;
-	/*	flex-wrap: wrap;*/
 	justify-content: space-around;
 	padding-top: 1px;
+	margin-bottom: 20px;
 }
 
 #technologies > h2 {
@@ -133,13 +133,11 @@ body {
 #technologies-button-wrapper {
 	display: flex;
 	justify-content: center;
-	position: absolute;
-	bottom: 20px;
-	width: 100%;
 }
 
 #checkout-projects {
 	all: unset;
+	color:white;
 	border-radius: 50%;
 	background-color: crimson;
 	width: 100px;

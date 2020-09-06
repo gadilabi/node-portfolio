@@ -188,7 +188,7 @@ class Project extends HTMLElement {
 			font-family: arial;
 			width: var(--card-width);
 			max-width: 90vw;
-			height:616px;
+			min-height:616px;
 			border-radius: 6px;
 			overflow: hidden;
 			background-color:white;
@@ -322,7 +322,7 @@ class Project extends HTMLElement {
 
 		<div id="links">
 
-			<a id="live-site" href="${this.liveUrl}">
+			<a id="live-site" target="_blank" href="${this.liveUrl}">
 				Live Site
 			</a>
 
@@ -378,7 +378,7 @@ class Project extends HTMLElement {
 	}
 
 	createLink(url) {
-		return `<a id="github-link" href="${url}">Github Repo</a>`;
+		return `<a id="github-link" target="_blank" href="${url}">Github Repo</a>`;
 
 	}
 
