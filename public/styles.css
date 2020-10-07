@@ -179,6 +179,7 @@ body {
 
 	background-image: radial-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
 	padding-top: 1px;
+	padding-bottom: 20px;
 	/*	background-color: #1a1e22;*/
 }
 
@@ -195,6 +196,57 @@ body {
 app-project {
 	justify-self: center;
 	max-width: 90vw;
+}
+
+#link-to-contact{
+	text-decoration: none;
+	color:black;
+	background-color: ghostwhite;
+	padding: 10px 20px;
+	display: inline-block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	border-radius: 6px;
+	border: 6px solid deepskyblue;
+
+}
+
+#link-to-contact:hover{
+	box-shadow: 0 0 20px 0 deepskyblue;
+	
+	
+}
+
+#contact-me{
+	min-height: 100vh;
+	background-color: #082a49;
+	color: white;
+	
+}
+
+#contact-me>h2{
+	margin: 0;
+	text-align: center;
+	font-size: 75px;
+	font-family: verdana;
+	padding: 20px 0;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#contact-me-text{
+	font-size: 50px;
+	text-align: center;
+	
+}
+
+.info{
+	margin: 20px;
+}
+
+.contact{
+	color: white;
+	
+	
 }
 
 @media(max-width:800px) {
@@ -225,5 +277,15 @@ app-project {
 
 	#backend {
 		font-size: 18px;
+	}
+	
+	#contact-me>h2{
+		font-size: 50px;
+		
+	}
+
+	#contact-me-text{
+		font-size: 25px;
+		
 	}
 }
