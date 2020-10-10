@@ -151,26 +151,6 @@ class Project extends HTMLElement {
 
 		this.template = document.createElement('template');
 
-
-
-		//		this.img = this.shadowRoot.querySelector("img");
-		//
-		//
-		//		this.projectNumberContainer = this.shadowRoot.querySelector("#project-num");
-		//
-		//
-		//		this.projectNameContainer = this.shadowRoot.querySelector("#project-name");
-		//
-		//
-		//		this.liveSite = this.shadowRoot.querySelector("#live-site");
-
-
-
-
-
-		//		this.backendContainer = this.shadowRoot.querySelector("#backend");
-
-
 	}
 
 	embedAttributes() {
