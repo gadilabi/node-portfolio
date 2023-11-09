@@ -7,37 +7,48 @@
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<title>Gad Laviod's Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
+
+	<!-- Google font "Kay Pho Du" -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+
  	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet"> 	
+
+	<!-- Components  -->
  	<script src="components/project.js"></script>
-	<style>
-		.project {}
+ 	<script src="components/nav.js"></script>
 
-		#project-1 {}
-
-	</style>
 </head>
+
 
 <body>
 
-	<div id="about-me">
+	<header>
+		<app-nav></app-nav>
+	</header>
+
+	<div class="active" id="about-me">
 
 		<div id="about-me-text">
 
 			<div id="about-me-header-container">
-				<img id="about-me-header" src="images/about_me.png" alt="">
-
+				<h1 class="about-me-header">About Me</h1>
+				<h1 class="about-me-header">About Me</h1>
+				<h1 class="about-me-header">About Me</h1>
 			</div>
 			<p>
-				My name is Gad Laviod and I am a 32 years old self taught full stack web developer.
-				I am single and located in Netanya.
+				My name is Gad Laviod and I am a 35 years old, second year Computer Science student at
+				the Open University.
 				<br><br>
-				Programming has been a hobby of mine for about a decade, but it was 2 years ago when I first started learning web development.
-				I set out to create a website for my tutoring business and ended up developing not only a website but a passion for the field.
-
+				I have been programming as a hobby for quite some time especially in the field of
+				web development.
 
 			</p>
 
-			<a id="checkout-skills" href="#technologies">Checkout My Skills</a>
+			<a id="checkout-skills" target="_blank" href="/cv/gad_laviod_cv.pdf">
+				<span>Checkout my c.v</span>
+			</a>
 
 
 		</div>
@@ -45,59 +56,6 @@
 		<div id="image-container">
 
 			<img src="images/id.png" alt="">
-
-		</div>
-
-	</div>
-
-	<div id="technologies">
-
-		<h2>Skills</h2>
-
-		<div id="tech-wrapper">
-			<div id="frontend">
-
-				<h3>
-
-					Frontend
-				</h3>
-
-				<p>
-
-					I am highly procifient in css which allows me to create beautiful and responsive layouts.
-					I can create intricate UI using vanilla js with or without web components.
-					I am relatively new to js frameworks but have a good grasp of React.
-
-				</p>
-			</div>
-
-			<div id="backend">
-
-				<h3>
-
-					Backend
-				</h3>
-
-				<p>
-					I have used both PHP and Node.js (with express) as server side languages.
-					In terms of databases I have mainly worked with MySQL but have some experience NoSQL databases such as Firebase and MongoDB.
-
-
-				</p>
-
-			</div>
-		</div>
-
-		<div id="technologies-button-wrapper">
-			<a href="#projects" id="checkout-projects">
-
-				<span>
-					Checkout Projects
-
-				</span>
-
-			</a>
-
 
 		</div>
 
@@ -114,39 +72,65 @@
 
 		<div id="projects-wrapper">
 
-
-
 			<app-project color="#fe076e" project-number="Project 1" live-site="https://neteacher.co.il" git-url="" img-url="images/neteacher.png" project-name="Online Learning Platform" frontend="Vannila js" backend="PHP & MySQL" description="This is a website built for my math tutoring business.
 			The website allows users to purchase online math courses."></app-project>
 
-			<app-project color="#ff4d06" project-number="Project 2" live-site="https://avodatova.co.il" git-url="" img-url="images/avodatova.png" project-name="Job Search Platform" frontend="Vannila js" backend="PHP & MySQL" description=" This is a job search platform. It allows users to register as job seekers or as recruiters. Job seekers can upload their cv, search for jobs and apply with one click. Recruiters can publish ads, track the number of applicants and download their cvs."></app-project>
+		<app-project color="#ff4d06" project-number="Project 2" live-site="https://avodatova.co.il" git-url="" img-url="images/avodatova.png" project-name="Job Search Platform" frontend="Vannila js" backend="PHP & MySQL" description=" This is a job search platform. It allows users to register as job seekers or as recruiters. Job seekers can upload their cv, search for jobs and apply with one click. Recruiters can publish ads, track the number of applicants and download their cvs."></app-project>
 
-			<app-project color="#008080" project-number="Project 3" live-site="https://moominmemorygame.herokuapp.com" git-url="https://github.com/gadilabi/moomin" img-url="images/moomin.png" project-name="Moomin Memory Game" frontend="Vannila js" backend="Node.js" description="This is a moomin themed memory game.				The game has three modes: single player, two players on the same machine and two players on remote machines."></app-project>
+		<app-project color="#008080" project-number="Project 3" live-site="https://moominmemorygame.herokuapp.com" git-url="https://github.com/gadilabi/moomin" img-url="images/moomin.png" project-name="Moomin Memory Game" frontend="Vannila js" backend="Node.js" description="This is a moomin themed memory game.				The game has three modes: single player, two players on the same machine and two players on remote machines."></app-project>
 
-			<app-project color="#082a49" project-number="Project 4" live-site="https://letsstarttalking.herokuapp.com/" git-url="https://github.com/gadilabi/lets-talk" img-url="images/letstalk.png" project-name="Video Chat" frontend="Web Components" backend="Node.js" description="This little website allows users to create rooms where they can chat with their friends.
-			Users can either send messages to the entire room or private messages to specific users. Moreover, Video calls are allowed between any two users."></app-project>
+		<app-project color="#082a49" project-number="Project 4" live-site="https://letsstarttalking.herokuapp.com/" git-url="https://github.com/gadilabi/lets-talk" img-url="images/letstalk.png" project-name="Video Chat" frontend="Web Components" backend="Node.js" description="This little website allows users to create rooms where they can chat with their friends.
+		Users can either send messages to the entire room or private messages to specific users. Moreover, Video calls are allowed between any two users."></app-project>
 
-			<app-project color="#3a3a88" project-number="Project 5" live-site="https://picbybreed.herokuapp.com/" git-url="https://github.com/gadilabi/pic-by-breed" img-url="images/picbybreed.png" project-name="Image Gallery" frontend="React" backend="nginx" description="Insert a dog breed and get an image gallery of cute dogs of that breed. Click any image to see it in its natural dimensions. "></app-project>
+	<app-project color="#3a3a88" project-number="Project 5" live-site="https://picbybreed.herokuapp.com/" git-url="https://github.com/gadilabi/pic-by-breed" img-url="images/picbybreed.png" project-name="Image Gallery" frontend="React" backend="nginx" description="Insert a dog breed and get an image gallery of cute dogs of that breed. Click any image to see it in its natural dimensions. "></app-project>
 
-			<app-project color="darkcyan" project-number="Project 6" live-site="https://quizzeme.herokuapp.com/" git-url="https://github.com/gadilabi/quizme" img-url="images/quizme.png" project-name="Quiz App" frontend="React" backend="Node.js & firestore" description="Solve quizes others posted and post your own"></app-project>
+	<app-project color="darkcyan" project-number="Project 6" live-site="https://quizzeme.herokuapp.com/" git-url="https://github.com/gadilabi/quizme" img-url="images/quizme.png" project-name="Quiz App" frontend="React" backend="Node.js & firestore" description="Solve quizes others posted and post your own"></app-project>
 
 
 		</div>
 
-		<a id="link-to-contact" href="#contact-me">Contact Me</a>
-		
-
 	</div>
 
 	<div id="contact-me">
+		<img src="images/curve_1.svg" alt="">
+		<img src="images/curve_2.svg" alt="">
+		<div class="text">
+			<h1>contact me</h1>
+			<div class="details">
+
+				<div class="email">
+					<img src="images/mail_gold.svg" alt="">
+					<a href="mailto:gadilabi@gmail.com">gadilabi@gmail.com</a>
+				</div>
+
+				<div class="phone">
+					<img src="images/mobile_gold.svg" alt="">
+					<a href="tel:0537246121">053-7246121</a>
+				</div>
+
+				<div class="li-page">
+					<img src="images/users_gold.svg" alt="">
+					<a target="_blank" href="https://www.linkedin.com/in/gad-laviod-0a301919a/">my Linkedin page</a>
+				</div>
+
+				<div class="cv">
+					<img src="images/cv_gold.svg" alt="">
+					<a target="_blank" href="/cv/Gad Laviod-CV.pdf">my c.v</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--
+	<div id="contact-me">
 		<h2>Contact Me</h2>
-		
+
 		<div id="contact-me-text">
 			<p>
 				If you like my work you can contact me at:
-				
+
 			</p>
-			
+
 			<div id="contact-me-info">
 				<div class="info">
 					<span>Email:</span>
@@ -157,25 +141,26 @@
 					<span>Phone:</span>
 					<a class="contact" href="tel:0537246121">053-7246121</a>
 				</div>
-				
+
 				<div class="info">
 					<span>For more information about me visit</span>
 					<a target="_blank" class="contact" href="https://www.linkedin.com/in/gad-laviod-0a301919a/">my Linkedin page</a>
 				</div>
-				
+
 				<div class="info">
 					<span>Or read </span>
 					<a target="_blank" class="contact" href="/cv/Gad Laviod-CV.pdf">my c.v</a>
 				</div>
-				
-				
-				
+
+
+
 			</div>
-			
+
 		</div>
-		
-		
+
+
 	</div>
+	-->
 
 
 </body>

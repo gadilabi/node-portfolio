@@ -1,26 +1,70 @@
+:root{
+	--clr-purple: #d400d4;
+	--clr-light-blue: #00ccff;
+	--clr-gold: #edd34d;
+}
+
 html {
 	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
 
+header {
+	position: fixed;
+	top:0;
+	z-index: 100;
 }
 
 body {
-
 	margin: 0;
-	font-family: sans-serif;
+	padding: 0;
+	font-family: 'PT Sans Narrow';
+	min-height: 100vh;
+	overflow: hidden;
 }
 
 #about-me {
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: space-around;
 	padding-top: 1px;
 	min-height: 100vh;
+	background-image: radial-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
 
 }
 
-#about-me-header {
+#about-me:target{
+	display: flex;
+}
 
+#about-me-header-container {
+	position: relative;
 	max-width: 95%;
+	font-weight: 900;
+	font-size: 35px;
+	font-family: "Poppins";
+}
+
+
+.about-me-header {
+	margin: 0;
+}
+
+
+.about-me-header:nth-child(1){
+	position: absolute;
+	color: rgb(230,230,230);
+}
+
+.about-me-header:nth-child(2){
+	clip-path: circle(36px at 36px 30px);
+	position: absolute;
+	color: var(--clr-light-blue);
+}
+
+.about-me-header:nth-child(3){
+	clip-path: circle(100px at 41% 140%);
+	color: var(--clr-purple);
 }
 
 #about-me-text {
@@ -28,142 +72,83 @@ body {
 	padding-top: 1px;
 	/*	margin: 0px 500px 0px 100px;*/
 	max-width: 50ch;
-	font-size: 20px;
-	color: rgb(100, 100, 100);
+	font-size: 25px;
+	color: rgb(230, 230, 230);
 
+}
+
+#about-me-text p {
+	margin-top: 10px;
 }
 
 #checkout-skills {
 	all: unset;
-	background-color: #189572;
+	position: relative;
 	color: white;
 	border-radius: 6px;
 	display: inline-block;
-	padding: 5px 10px 5px 10px;
 	cursor: pointer;
+	z-index: 10;
+}
+
+
+#checkout-skills span {
+	box-sizing: border-box;
+	padding: 5px 10px 5px 10px;
+	background-image: linear-gradient(60deg, #232446 50%, #121438 50%);
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+
+}
+
+#checkout-skills:hover::after,
+#checkout-skills:hover::before {
+	transform: rotateZ(180deg);
+}
+
+#checkout-skills::before {
+	content: '';
+	position: absolute;
+	inset: -3px;
+	z-index: -50;
+	background-image: linear-gradient(45deg, #00ccff, #232446, #121438 , #d400d4);
+	filter: blur(10px);
+	transition: 0.2s;
+}
+
+#checkout-skills::after {
+	content: '';
+	position: absolute;
+	inset: -3px;
+	z-index: -50;
+	background-image: linear-gradient(45deg, #00ccff, #232446, #121438 , #d400d4);
+	transition: 0.2s;
+}
+
+#checkout-skills {
+	/*box-shadow: -10px 10px 5px green, 10px -10px 5px red;*/
 }
 
 #image-container {
+	position: relative;
 	align-self: center;
 	width: 400px;
 	height: 263px;
 }
 
+#image-container > canvas {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
 #image-container > img {
 	width: 100%;
 }
-
-#technologies {
-	min-height: 100vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/computer.jpg');
-	background-size: cover;
-	padding-top: 1px;
-	color: white;
-	position: relative;
-}
-
-#tech-wrapper {
-	display: flex;
-	justify-content: space-around;
-	padding-top: 1px;
-	margin-bottom: 20px;
-}
-
-#technologies > h2 {
-	margin: 40px 0 100px 0;
-	text-align: center;
-	font-size: 50px;
-}
-
-#frontend {
-	position: relative;
-	text-align: center;
-	margin-right: 40px;
-	flex-basis: 50ch;
-	font-size: 25px;
-	margin-left: 20px;
-
-}
-
-#frontend > h3 {
-	font-size: 30px;
-
-}
-
-#frontend::before {
-	content: '';
-	background-image: url('images/screen.svg');
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: -30px;
-	margin: auto;
-	width: 40px;
-	height: 40px;
-	background-size: cover;
-
-}
-
-#backend {
-	position: relative;
-	text-align: center;
-	flex-basis: 50ch;
-	font-size: 25px;
-	margin-right: 20px;
-}
-
-#backend > h3 {
-	font-size: 30px;
-
-}
-
-#backend::before {
-	content: '';
-	background-image: url('images/db.svg');
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: -30px;
-	margin: auto;
-	width: 40px;
-	height: 40px;
-	background-size: cover;
-
-
-}
-
-#technologies-button-wrapper {
-	display: flex;
-	justify-content: center;
-}
-
-#checkout-projects {
-	all: unset;
-	color: white;
-	border-radius: 50%;
-	background-color: crimson;
-	width: 100px;
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 30px;
-	cursor: pointer;
-	box-shadow: 0 0 5px 0 white;
-}
-
-#checkout-projects:hover {
-	box-shadow: 0 0 20px 0 white;
-
-
-}
-
-#checkout-projects > span {
-	width: min-content;
-	text-align: center;
-
-}
-
 
 #projects-wrapper {
 	display: grid;
@@ -177,10 +162,15 @@ body {
 
 #projects {
 
+	display: none;
 	background-image: radial-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
-	padding-top: 1px;
+	padding-top: 50px;
 	padding-bottom: 20px;
 	/*	background-color: #1a1e22;*/
+}
+
+#projects:target {
+	display: block;
 }
 
 #projects-header {
@@ -213,13 +203,74 @@ app-project {
 
 #link-to-contact:hover{
 	box-shadow: 0 0 20px 0 deepskyblue;
-	
-	
 }
 
+
+#contact-me {
+	padding-top: 1px;
+	height: 100vh;
+	min-height: 100%;
+	background-image: radial-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
+	display: none;
+}
+
+#contact-me:target {
+	display: block;
+}
+
+#contact-me>img:nth-child(1){
+	position: absolute;
+	top:50px;
+	right: -50px;
+}
+
+#contact-me>img:nth-child(2){
+	position: absolute;
+	bottom:-16px;
+	right: -50px;
+}
+
+#contact-me .text {
+	position: relative;
+	top: 20%;
+	left: 120px;
+	width: max-content;
+	position: relative;
+	max-width: 95%;
+	font-weight: 900;
+	font-size: 35px;
+	font-family: "Poppins";
+	color: var(--clr-gold);
+
+}
+
+#contact-me h1 {
+	text-transform: capitalize;
+}
+
+.details div {
+	display: flex;
+	align-items: center;
+}
+
+.details a {
+	position: relative;
+	color: var(--clr-gold);
+	display: block;
+}
+
+.details img {
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+}
+
+/*
 #contact-me{
+	padding-top: 50px;
+	display: none;
 	min-height: 100vh;
-	background-color: #082a49;
+	background-image: radial-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
 	color: white;
 	
 }
@@ -228,9 +279,7 @@ app-project {
 	margin: 0;
 	text-align: center;
 	font-size: 75px;
-	font-family: verdana;
 	padding: 20px 0;
-    font-family: 'Luckiest Guy', cursive;
 }
 
 #contact-me-text{
@@ -249,6 +298,8 @@ app-project {
 	
 }
 
+*/
+
 @media(max-width:800px) {
 
 	#about-me {
@@ -256,13 +307,11 @@ app-project {
 		justify-content: start;
 		flex-flow: column-reverse;
 		align-content: center;
-		margin: 20px 20px 20px 20px;
 		text-align: center;
 	}
 
 	#about-me-header-container {
-		display: flex;
-		justify-content: center;
+		display: none;
 
 	}
 
