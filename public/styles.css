@@ -20,10 +20,10 @@ body {
 	padding: 0;
 	font-family: 'PT Sans Narrow';
 	min-height: 100vh;
-	overflow: hidden;
 }
 
 #about-me {
+	box-sizing: border-box;
 	display: none;
 	align-items: center;
 	justify-content: space-around;
@@ -207,11 +207,14 @@ app-project {
 
 
 #contact-me {
+	box-sizing: border-box;
+	position: relative;
 	padding-top: 1px;
 	height: 100vh;
 	min-height: 100%;
 	background-image: radial-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
 	display: none;
+	overflow: hidden;
 }
 
 #contact-me:target {
