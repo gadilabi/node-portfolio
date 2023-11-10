@@ -65,6 +65,7 @@ body {
 .about-me-header:nth-child(3){
 	clip-path: circle(100px at 41% 140%);
 	color: var(--clr-purple);
+	width: max-content;
 }
 
 #about-me-text {
@@ -127,9 +128,6 @@ body {
 	transition: 0.2s;
 }
 
-#checkout-skills {
-	/*box-shadow: -10px 10px 5px green, 10px -10px 5px red;*/
-}
 
 #image-container {
 	position: relative;
@@ -238,7 +236,6 @@ app-project {
 	top: 20%;
 	left: 120px;
 	width: max-content;
-	position: relative;
 	max-width: 95%;
 	font-weight: 900;
 	font-size: 35px;
@@ -268,69 +265,56 @@ app-project {
 	margin-right: 20px;
 }
 
-/*
-#contact-me{
-	padding-top: 50px;
-	display: none;
-	min-height: 100vh;
-	background-image: radial-gradient(rgb(100, 100, 100), rgb(0, 0, 0));
-	color: white;
-	
-}
 
-#contact-me>h2{
-	margin: 0;
-	text-align: center;
-	font-size: 75px;
-	padding: 20px 0;
-}
+@media(max-width: 1000px) {
 
-#contact-me-text{
-	font-size: 50px;
-	text-align: center;
-	
-}
-
-.info{
-	margin: 20px;
-}
-
-.contact{
-	color: white;
-	
-	
-}
-
-*/
-
-@media(max-width:800px) {
-
-	#about-me {
+	#about-me:target {
+		display: flex;
 		flex-direction: column;
-		justify-content: start;
-		flex-flow: column-reverse;
-		align-content: center;
-		text-align: center;
+		align-items: center;
 	}
 
 	#about-me-header-container {
+		width: max-content;
+		margin: 100px auto 0 auto;
+	}
+
+	#about-me p {
+		margin: 10px auto 20px auto;
+		text-align: center;
+		max-width: 80%;
+	}
+
+	#checkout-skills {
+		display: block;
+		width: max-content;
+		margin: 0 auto;
+	}
+
+	#image-container {
 		display: none;
 
 	}
 
-	#image-container {
-		max-width: 95%;
-
+	#contact-me > img {
+		display: none;
 	}
 
-	#frontend {
-		font-size: 18px;
+	#contact-me:target {
+		display: grid;
+		grid-template-columns: 1fr;
+		place-items: center;
 	}
 
-	#backend {
-		font-size: 18px;
+	#contact-me .text {
+		width: max-content;
+		position: static;
 	}
-	
+
+	#contact-me h1 {
+		text-align: center;
+	}
+
 	#contact-me>h2{
 		font-size: 50px;
 		
@@ -340,4 +324,20 @@ app-project {
 		font-size: 25px;
 		
 	}
+
+}
+
+@media(max-width: 450px) {
+	#checkout-skills {
+		display: block;
+		width: auto;
+		margin: 50px auto;
+	}
+
+
+	#contact-me .text {
+		font-size: 25px;;
+	}
+
+
 }
