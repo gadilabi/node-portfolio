@@ -232,7 +232,7 @@ app-project {
 
 #contact-me .text {
 	position: relative;
-	top: 20%;
+	top: 20vh;
 	left: 120px;
 	width: max-content;
 	max-width: 95%;
@@ -245,6 +245,10 @@ app-project {
 
 #contact-me h1 {
 	text-transform: capitalize;
+}
+
+#contact-me a {
+	font-weight: 400;
 }
 
 .details div {
@@ -312,7 +316,10 @@ app-project {
 
 	#contact-me h1 {
 		text-align: center;
+		border-top: 3px solid var(--clr-gold);
+		border-bottom: 3px solid var(--clr-gold);
 	}
+
 
 	#contact-me>h2{
 		font-size: 50px;
@@ -330,12 +337,16 @@ app-project {
 	#checkout-skills {
 		display: block;
 		width: auto;
-		margin: 50px auto;
+		margin: 50px 3px;
 	}
 
 
 	#contact-me .text {
 		font-size: 25px;;
+	}
+
+	#contact-me a {
+		margin-bottom: 10px;
 	}
 
 

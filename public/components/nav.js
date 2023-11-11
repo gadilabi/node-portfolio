@@ -34,62 +34,26 @@ a{
 	transition: 0.1s;
 }
 
-a.active::before {
-	content: '';
-	position: absolute;
-	background: transparent;
-	top: 0;
-	left: 0;
-	border-radius: 5px;
-	width: 100%;
-	height: 100%;
-	box-shadow: 
-		inset 5px 5px 10px orange, 
-		inset -5px -5px 10px orange, 
-		inset 5px -5px 10px orange, 
-		inset -5px 5px 10px orange;
-	transition: 0.1s;
-
-}
-
 a.active {
 	color: gold;
 	border: 2px solid gold;
 	border-radius: 5px;
 	text-shadow:
-		2px 2px 5px orange, 
-		-2px -2px 5px orange, 
-		2px -2px 5px orange, 
-		-2px 2px 5px orange;
+		1px 1px 2px orange, 
+		-1px -1px 2px orange, 
+		1px -1px 2px orange, 
+		-1px 1px 2px orange;
 	box-shadow:
-		5px 5px 10px orange, 
-		-5px -5px 10px orange, 
-		5px -5px 10px orange, 
-		-5px 5px 10px orange;
+		1px 1px 5px orange, 
+		-1px -1px 5px orange, 
+		1px -1px 5px orange, 
+		-1px 1px 5px orange,
+		inset 1px 1px 5px orange, 
+		inset -1px -1px 5px orange, 
+		inset 1px -1px 5px orange, 
+		inset -1px 1px 5px orange;
 }
 
-.line-over::before{
-    content:'';
-    display: block;
-    width:0;
-    height:3px;
-    position: absolute;
-    top: -2px;
-    background-color: black;
-    transition:width 0.2s linear;
-}
-
-.line-over:hover::before{
-    width:100%;
-
-}
-
-
-
-.button:hover{
-    transform: scale(1.05);
-    box-shadow: 2 px 6 px 6 px 0 rgb(200, 200, 200);
-}
 
 </style>
 
