@@ -55,6 +55,37 @@ a.active {
 }
 
 
+@media(max-width: 370px) {
+
+	a{
+		font-size: 4.6vw;
+		padding: 2.7vw 3.25vw;
+		margin: 0;
+	}
+
+	a.active {
+		color: gold;
+		border: 2px solid gold;
+		border-radius: 5px;
+		text-shadow:
+			1px 1px 2px orange, 
+			-1px -1px 2px orange, 
+			1px -1px 2px orange, 
+			-1px 1px 2px orange;
+		box-shadow:
+			1px 1px 5px orange, 
+			-1px -1px 5px orange, 
+			1px -1px 5px orange, 
+			-1px 1px 5px orange,
+			inset 1px 1px 5px orange, 
+			inset -1px -1px 5px orange, 
+			inset 1px -1px 5px orange, 
+			inset -1px 1px 5px orange;
+	}
+
+}
+
+
 </style>
 
 <div id="nav">

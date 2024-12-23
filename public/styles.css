@@ -57,7 +57,7 @@ body {
 }
 
 .about-me-header:nth-child(2){
-	clip-path: circle(36px at 36px 30px);
+	clip-path: circle(36px at 10% 28%);
 	position: absolute;
 	color: var(--clr-light-blue);
 }
@@ -225,6 +225,7 @@ app-project {
 }
 
 #contact-me>img:nth-child(2){
+	display: none;
 	position: absolute;
 	bottom:-16px;
 	right: -50px;
@@ -334,6 +335,24 @@ app-project {
 }
 
 @media(max-width: 450px) {
+
+	#about-me-header-container {
+		position: relative;
+		max-width: 100%;
+		font-weight: 900;
+		font-size: 7.5vw;
+		font-family: "Poppins";
+	}
+
+	.about-me-header:nth-child(2){
+		clip-path: circle(7vw at 36px 30px);
+	}
+
+	.about-me-header:nth-child(3){
+		clip-path: circle(20vw at 41% 140%);
+		width: max-content;
+	}
+
 	#checkout-skills {
 		display: block;
 		width: auto;
@@ -347,6 +366,41 @@ app-project {
 
 	#contact-me a {
 		margin-bottom: 10px;
+	}
+
+
+}
+
+@media(max-width: 370px) {
+
+	#about-me-header-container {
+		position: relative;
+		max-width: 100%;
+		font-weight: 900;
+		font-family: "Poppins";
+	}
+
+	#checkout-skills {
+		display: block;
+		width: auto;
+		margin: 50px 3px;
+	}
+
+
+	#contact-me .text {
+		font-size: 25px;;
+	}
+
+	#contact-me a {
+		margin-bottom: 10px;
+	}
+
+	#contact-me h1 {
+		font-size: 13.5vw;
+	}
+
+	.details a {
+		font-size: 6.75vw;
 	}
 
 
